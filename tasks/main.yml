@@ -1,0 +1,23 @@
+---
+
+# Install
+- import_tasks: install.yml
+  tags:
+    - manala_dhcp
+
+# Interfaces
+- import_tasks: interfaces.yml
+  tags:
+    - manala_dhcp
+
+# Config
+- import_tasks: config.yml
+  tags:
+    - manala_dhcp
+
+# Services
+- import_tasks: services.yml
+  tags:
+    - manala_dhcp
+    - manala_dhcp.services
+    - manala.services
